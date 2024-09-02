@@ -1,0 +1,24 @@
+.main {
+    flex: 1;
+}
+
+.aboutme {
+    width: 100%;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutme-content {
+    width: 40%;
+}
+
+.aboutme-img {
+    border-radius: 250px;
+    width: 50%;
+    max-width: 500px;
+    max-height: 500px;
+    box-shadow: 0px 0px 20px 0px #fff;
+    /* filter: brightness(0); */
+}

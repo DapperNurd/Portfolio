@@ -1,0 +1,157 @@
+:root {
+    --circle_color: 0, 100, 0;
+    --circle_size: 100%;
+}
+
+
+/* background based on: https://www.youtube.com/watch?v=Ml-B-W91gtw */
+
+.backdrop {
+    top:0;
+    left:0;
+    z-index: -3;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+    overflow: hidden;
+}
+
+.dynamic-bg {
+    width: 100vw;
+    height: 100vh;
+
+    /* background-color: black; */
+
+    position: absolute;
+    overflow: hidden;
+
+    top: 0;
+    left: 0;
+
+    z-index: -2;
+
+    filter: url(#goo) blur(10vw);
+}
+
+svg {
+    display: none;
+}
+
+.ball {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--circle_color), 0.8) 0, rgba(var(--circle_color),0) 50%) no-repeat;
+    mix-blend-mode: hard-light;
+
+    width: var(--circle_size);
+    height: var(--circle_size);
+
+    /* top: calc(50% - var(--circle_size) / 2);
+    left: calc(50% - var(--circle_size) / 2); */
+
+    /* transform-origin: 35%; */
+}
+
+#ball_1 {
+    top: calc(35% - var(--circle_size) / 2);
+    left: calc(20% - var(--circle_size) / 2);
+    animation: moveInCircle 12s linear infinite;
+    transform-origin: 60%;
+}
+
+#ball_2 {
+    top: calc(80% - var(--circle_size) / 2);
+    left: calc(25% - var(--circle_size) / 2);
+    animation: moveHorizontal 16s linear infinite;
+}
+
+#ball_3 {
+    top: calc(25% - var(--circle_size) / 2);
+    left: calc(65% - var(--circle_size) / 2);
+    animation: moveInCircle 14s linear infinite;
+}
+
+#ball_4 {
+    top: calc(75% - var(--circle_size) / 2);
+    left: calc(95% - var(--circle_size) / 2);
+    animation: moveVertical 10s ease-in-out infinite;
+}
+
+#ball_5 {
+    background: radial-gradient(circle at center, rgba(150, 150, 150, 0.8) 0, rgba(150, 150, 150,0) 50%) no-repeat;
+
+    height: calc(var(--circle_size)/2);
+    width: calc(var(--circle_size)/2);
+
+    top: calc(50% - var(--circle_size) / 4);
+    left: calc(50% - var(--circle_size) / 4);
+    animation: moveHorizontal 23s linear infinite;
+}
+
+
+#ball_mouse {
+    -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1), rgba(0,0,0,1) 20%, rgba(0,0,0,0) 60%);
+    mask-image: radial-gradient(circle at center, rgba(0,0,0,1), rgba(0,0,0,1) 20%, rgba(0,0,0,0) 60%);
+}
+
+#ball_mouse, #ball_mouse_static {
+
+    height: 15vw;
+    width: 15vw;
+    position: fixed;
+    z-index: -1;
+    /* background: rgba(10,10,10,10); */
+    border-radius: 100%;
+    -webkit-backdrop-filter: hue-rotate(50deg);
+    /* -moz-backdrop-filter: hue-rotate(50deg); */
+    backdrop-filter: hue-rotate(50deg);
+    /* box-shadow: white 0 0 5px; */
+}
+
+#ball_mouse_static, #page_bg {
+    display: none;
+    overflow: hidden;
+}
+
+#page_bg {
+    border-radius: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+}
+
+@keyframes moveInCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveVertical {
+    0% {
+        transform: translateY(-40%);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(-40%);
+    }
+}
+
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(-30%) translateY(10%);
+    }
+    50% {
+        transform: translateX(50%) translateY(-10%);
+    }
+    100% {
+        transform: translateX(-30%) translateY(10%);
+    }
+}

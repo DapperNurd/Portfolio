@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ben Bonus</title>
+        <script src="JS/bg-color-change.js" async defer></script>
+        <script src="JS/cover.js" async defer></script>
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/balls-bg.css">
+        <link rel="stylesheet" href="CSS/about.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="cover"></div>
+        <div id="content">
+            <header>
+                <div id="title">
+                    Ben Bonus
+                </div>
+                <nav>
+                    <div class="nav-btn" id="about-btn" onclick="fade('./index.html')">About</div>
+                    <div class="nav-btn" id="projects-btn" onclick="fade('./projects.html')">Projects</div>
+                    <div class="nav-btn" id="resume-btn">Resume</div>
+                </nav>
+            </header>
+            <div class="main aboutme">
+                    <div class="aboutme-content">
+                        <div class="heading">Hello!</div>
+                        My name is Ben Bonus. I am a 21 year-old Computer Science student living from the northwest USA. Originally born in Southern California, I was raised in Northern Idaho where I earned my Associate's Degree and am now working towards my Bachelor's Degree at the University of Idaho.
+                        <br><br>
+                        Computer Science is something that I have been interested in for as long as I can remember. I have always known that this is a field I wanted to pursue, and I am so happy to be fulfilling this dream by earning my degree.
+                        <br><br>
+                        I put my best into everything I create. I thrive on challenges and see them as opportunities to grow, learn, and push the boundaries of my creativity. Whether it is working with familiar technologies or exploring new ones, I am driven by the constant desire to improve.
+                    </div>
+                    <img class="aboutme-img" src="Pictures/BenB_Portrait.png">
+            </div>
+            <footer>
+                <a href="https://www.linkedin.com/in/ben-bonus/" target=”_blank”>LinkedIn</a>
+                <a href="mailto:jbenbonus@gmail.com">Email</a>
+            </footer>
+        </div>
+        <div class="backdrop">
+            <div class="dynamic-bg">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                        <feColorMatrix type="hueRotate" values="0" />
+                        <!-- <feComponentTransfer>
+                            <feFuncR type="linear" slope="1" />
+                            <feFuncG type="linear" slope="1" />
+                            <feFuncB type="linear" slope="1" />
+                        </feComponentTransfer> -->
+                    </filter>
+                    </defs>
+                </svg>
+                <div class="ball" id="ball_1"></div>
+                <div class="ball" id="ball_2"></div>
+                <div class="ball" id="ball_3"></div>
+                <div class="ball" id="ball_4"></div>
+                <div class="ball" id="ball_5"></div>
+                <!-- <div class="ball" id="ball_white"></div> -->
+            </div>
+        </div>
+        <!-- <div id="ball_mouse"></div> -->
+        <div id="ball_mouse_static"></div>
+    </body>
+</html>
