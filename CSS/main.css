@@ -46,7 +46,7 @@ html, body {
 }
 
 header {
-    min-height: 15vh;
+    min-height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -68,7 +68,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
 }
 
 nav a {
@@ -97,16 +97,16 @@ nav a {
 }
 
 .nav-btn {
-    margin: 16px;
-    padding-bottom: 8px;
+    margin: 8px 16px;
+    /* padding-bottom: 8px; */
     -webkit-user-select: none;
     user-select: none;
     /* margin: 8px; */
 }
 
 .nav-btn:hover, .nav-btn a:hover {
-    padding-bottom: 4px; /* decrease this to counteract new added height from border */ 
-    border-bottom: 4px solid white;
+    margin-bottom: 6px; /* decrease this to counteract new added height from border */ 
+    border-bottom: 2px solid white;
     transition: 0.1s;
     cursor: pointer;
 }

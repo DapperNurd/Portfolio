@@ -32,7 +32,7 @@
 
     z-index: -2;
 
-    filter: url(#goo) blur(10vw);
+    filter: url(#goo) blur(300px);
 }
 
 svg {
