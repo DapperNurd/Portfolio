@@ -76,6 +76,12 @@ nav a {
     color:white;
 }
 
+.note {
+    font-size: 1.2rem;
+    margin-top: 64px;
+    font-style: italic;
+}
+
 .heading {
     font-size: 36px;
     padding-bottom: 16px;
