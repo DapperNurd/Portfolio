@@ -76,6 +76,40 @@ nav a {
     color:white;
 }
 
+.projects-nav {
+    overflow: hidden;
+}
+
+.projects-nav-section .projects-nav-header {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-right: 20px; /* space for caret */
+}
+
+/* caret */
+.projects-nav-section .projects-nav-header::after {
+  content: "▾";
+  right: 10px;
+  top: 47%;
+  position: absolute;
+  transition: transform .18s ease;
+}
+
+/* Remove caret on first item (highlights) */
+.projects-nav-section:first-of-type .projects-nav-header:first-child::after {
+  content: '';
+}
+
+/* collapsed state: hide items and rotate caret */
+.projects-nav-section.collapsed .projects-nav-header::after {
+  transform: rotate(-90deg);
+}
+
+.projects-nav-section.collapsed .projects-nav-item {
+  display: none;
+}
+
 .note {
     font-size: 1.2rem;
     margin-top: 64px;
@@ -104,17 +138,34 @@ nav a {
 
 .nav-btn {
     margin: 8px 16px;
-    /* padding-bottom: 8px; */
     -webkit-user-select: none;
     user-select: none;
-    /* margin: 8px; */
 }
 
-.nav-btn:hover, .nav-btn a:hover {
-    margin-bottom: 6px; /* decrease this to counteract new added height from border */ 
-    border-bottom: 2px solid white;
-    transition: 0.1s;
+.nav-btn {
+    margin: 8px 16px;
+    -webkit-user-select: none;
+    user-select: none;
+    position: relative;
     cursor: pointer;
+}
+
+.nav-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.1s ease;
+    pointer-events: none;
+}
+
+.nav-btn:hover::after {
+    transform: scaleX(1);
 }
 
 .nav-btn:active, .nav-btn a:active {

@@ -46,6 +46,8 @@ html {
     align-self: flex-start;
     position: sticky;
     top: 42px;
+
+    overflow-y: auto;
 }
 
 .projects-nav a {
@@ -206,6 +208,10 @@ html {
         padding: 0.5vh 0px;
         font-weight: 300;
     }
+
+    .projects-nav-section:not(:first-of-type){
+        display: none;
+    }
 }
 
 
@@ -222,6 +228,15 @@ html {
         padding: 5px 0px;
         background-color: rgba(0, 0, 0, 0.24);
         /* background: linear-gradient(to top, black 1%, #00000000) */
+    }
+
+    .projects-nav-section, .projects-nav-header {
+        text-align: center;
+        padding: 0px !important;
+    }
+
+    .projects-nav-section:not(:first-of-type){
+        display: none;
     }
 
     .main {
@@ -243,13 +258,8 @@ html {
         gap: 15px;
     }
 
-    .projects-nav-section {
-        min-width: 10vw;
-        max-width: 15vw;
-    }
-
     .projects-nav-header {
-        padding-top: 0;
+        padding: 0;
     }
 
     .projects-nav-item {

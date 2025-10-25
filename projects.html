@@ -9,6 +9,7 @@
         <title>Ben Bonus</title>
         <script src="JS/bg-color-change.js" async defer></script>
         <script src="JS/cover.js" async defer></script>
+        <script src="JS/nav-collapse.js" defer></script>
         <link rel="icon" href="./Pictures/BenB_Portrait.png">
         <link rel="stylesheet" href="CSS/main.css">
         <link rel="stylesheet" href="CSS/balls-bg.css">
@@ -33,7 +34,17 @@
             <div class="main">
                 <div class="projects-nav"> 
                     <div class="projects-nav-section">                  
-                        <div class="projects-nav-header">Games</div>
+                        <div class="projects-nav-header">Highlights</div>
+                        <a href="#AllLeap"><div class="projects-nav-item">All Leap!</div></a>
+                        <a href="#Piebot"><div class="projects-nav-item">Piebot</div></a>
+                        <a href="#ParticleLife"><div class="projects-nav-item">Particle Life Simulation</div></a>
+                        <a href="#PixelSimulation"><div class="projects-nav-item">Pixel Simulation</div></a>
+                    </div> 
+
+                    <div class="projects-nav-section">                  
+                        <div class="projects-nav-header collapsed">Games</div>
+                        <a href="#AllLeap"><div class="projects-nav-item">All Leap!</div></a>
+                        <a href="#StreetPerformer"><div class="projects-nav-item">Street Performer</div></a>
                         <a href="#NocturneOfTheForest"><div class="projects-nav-item">Nocturne of the Forest</div></a>
                         <a href="#MacabreManor"><div class="projects-nav-item">Macabre Manor</div></a>
                         <a href="#BulletBlitz"><div class="projects-nav-item">Bullet Blitz</div></a>
@@ -44,6 +55,7 @@
                     <div class="projects-nav-section"> 
                         <div class="projects-nav-header">Apps</div>
                         <a href="#Piebot"><div class="projects-nav-item">Piebot</div></a>
+                        <a href="#ParticleLife"><div class="projects-nav-item">Particle Life Simulation</div></a>
                         </div>
 
                     <div class="projects-nav-section"> 
@@ -59,13 +71,47 @@
                     </div>
 
                     <div class="projects-nav-section"> 
-                        <div class="projects-nav-header">Unfinished</div>
+                        <div class="projects-nav-header">Shelved</div>
                         <a href="#PixelSimulation"><div class="projects-nav-item">Pixel Simulation</div></a>
                         <a href="#MinecraftSkinEditor"><div class="projects-nav-item">Minecraft Skin Editor</div></a>
                     </div>
                 </div>
                 <div class="projects-content">
                     <div class="projects-header first-header">Games</div>
+                    <div class="projects-section" id="AllLeap">
+                        <div class="projects-section-header">All Leap!</div>
+                        <div class="projects-section-body">
+                            <div class="projects-section-body-text">
+                                All Leap! is game created by Davin Lewis and I in <a href="https://unity.com/" target="_blank">Unity</a> for the <a href="https://itch.io/jam/brackeys-14">Brackeys Game Jam 2025.2</a>. The theme was "Risk it for the Biscuit", and we decided to make a game where you play as a corgi ascending a tornado to reach his family.
+                                <br><br>
+                                This game is a bit unique in its idea, and I had a really fun time creating it. All Leap! is designed to be a collectathon-foddian game. In other words, it is meant to be very hard on purpose. The final version on itch is a bit more hard than intended, but the core idea is still there.
+                                <br><br>
+                                I have been continuing work on this game in my own time with hopes to eventually releasing it as a full-fledged game. For now, you can play the jam version of the game on itch.io here: <a href="https://nurd.itch.io/all-leap" target="_blank">https://nurd.itch.io/all-leap</a>.
+                            </div>
+                            <div class="projects-section-body-img">
+                                <div class="projects-img-wrapper"><img src="./Pictures/AllLeap/2.png"></div>
+                                <div class="projects-img-wrapper"><img src="./Pictures/AllLeap/3.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-section" id="StreetPerformer">
+                        <div class="projects-section-header"><a href="https://github.com/DapperNurd/StreetPerformer" target="_blank">Street Performer</a></div>
+                        <div class="projects-section-body">
+                            <div class="projects-section-body-text">
+                                Street Performer is a game I made in <a href="https://unity.com/" target="_blank">Unity</a> for the <a href="https://itch.io/jam/tgcxcoreblazer">thatgamecompany × COREBLAZER GAME JAM 2025</a>. The theme for this jam was "Generosity", and so I decided to make a game where you play as a street performer, earning money only through donations.
+                                <br><br>
+                                The game is a rhythm-based, incremental game. You play as a street performer and can use the keys on your keyboard to play music. The "better" you play, the more money you get. With money, you can buy upgrades and new instruments.
+                                <br><br>
+                                I made this game alone, which is unlike most of the other jam games I have worked on. It was a fun experience, and I do think I learned a lot artistically on this project. The game itself is fairly simple, but I spent a lot of time making all the art custom and giving it my own style.
+                                <br><br>
+                                Street Performer is available to play on itch.io here: <a href="https://nurd.itch.io/street-performer" target="_blank">https://nurd.itch.io/street-performer</a>.
+                                </div>
+                            <div class="projects-section-body-img">
+                                <div class="projects-img-wrapper"><img src="./Pictures/StreetPerformer/1.png"></div>
+                                <div class="projects-img-wrapper"><img src="./Pictures/StreetPerformer/2.png"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="projects-section" id="NocturneOfTheForest">
                         <div class="projects-section-header"><a href="https://github.com/MelloNurd/Nocturne-Forest" target="_blank">Nocturne of the Forest</a></div>
                         <div class="projects-section-body">
@@ -184,6 +230,25 @@
                             </div>
                         </div>
                     </div>
+                    <div class="projects-section" id="ParticleLife">
+                        <div class="projects-section-header"><a href="https://github.com/MelloNurd/ParticleShooter" target="_blank">Particle Life Simulator</a></div>
+                        <div class="projects-section-body">
+                            <div class="projects-section-body-text">
+                                Particle Life Simulator is a simulation app made in <a href="https://unity.com/" target="_blank">Unity</a>. This was made by my teammate Davin Lewis and I while working at Polymorphic Games. The project originally was a prototype, but eventually we polished it up and released it as a full product.
+                                <br><br>
+                                The app allows you to simulate different particles and their forces interacting with each other. You get a full list of values to manipulate, and even have the option to save/load different profiles. It ends up making for a very cool visual design as you can see particles fly around. At times it looks life-like.
+                                <br><br>
+                                This project taught me a lot about optimization. Simulating thoudsands of particles at once, using pairwise calculations, was very costly. Thankfully, after much trial-and-error, we figured out several ways to optimize it and reach up to tens of thoudsands of particles!
+                                <br><br>
+                                The project can be downloaded on itch.io here: <a href="https://polymorphic-games.itch.io/particle-life-simulator" target="_blank">https://polymorphic-games.itch.io/particle-life-simulator</a>.
+                            </div>
+                            <div class="projects-section-body-img">
+                                <div class="projects-img-wrapper"><img src="./Pictures/ParticleLife/1.png"></div>
+                                <div class="projects-img-wrapper"><img src="./Pictures/ParticleLife/2.png"></div>
+                                <div class="projects-img-wrapper"><img src="./Pictures/ParticleLife/3.png"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="projects-header">Websites</div>
                     <div class="projects-section" id="Portfolio">
                         <div class="projects-section-header"><a href="https://github.com/DapperNurd/Portfolio" target="_blank">Portfolio</a></div>
@@ -249,7 +314,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects-header">Unfinished</div>
+                    <div class="projects-header">Shelved</div>
                     <div class="projects-section" id="PixelSimulation">
                         <div class="projects-section-header"><a href="https://github.com/DapperNurd/Pixelized" target="_blank">Pixel Simulation</a></div>
                         <div class="projects-section-body">
