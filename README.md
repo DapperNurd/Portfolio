@@ -1,3 +1,3 @@
 # Portfolio
  
-Visit at [www.benbon.us](www.benbon.us) or [https://dappernurd.github.io/Portfolio/index.html](https://dappernurd.github.io/Portfolio/index.html)
+Visit at [https://www.benbon.us](https://www.benbon.us) or [https://www.dappernurd.github.io/Portfolio/index.html](https://www.dappernurd.github.io/Portfolio/index.html)
