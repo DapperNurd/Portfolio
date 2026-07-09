@@ -153,6 +153,13 @@ html {
     text-transform: uppercase;
 }
 
+.projects-header p {
+    text-transform: capitalize;
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
 .projects-section-body {
     display: flex;
     gap: 42px;
